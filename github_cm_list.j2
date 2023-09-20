@@ -1,0 +1,4 @@
+"Name","Status","Cluster","IP address"
+{% for vm in queryset %}
+{{ vm.name }},{{ vm.status.value }},{{ vm.cluster.name }},{{ vm.primary_ip.address }}
+{% endfor %}
