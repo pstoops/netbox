@@ -1,0 +1,2 @@
+{% for device in queryset %}{{ device.name }},{{ device.serial }},{{ device.device_type.manufacturer }},{{ device.device_type.model }},{{ device.site }},{{ device.platform.slug }}
+{% endfor %}
