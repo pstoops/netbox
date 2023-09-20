@@ -1,2 +1,2 @@
-{% for device in queryset %}{{ device.name }},{{ device.serial }},{{ device.device_type.manufacturer }},{{ device.device_type.model }},{{ device.site }},{{ device.platform.slug }}
+{% for device in queryset %}{{ device.name }},{{ device.asset_tag }},{{ device.serial }},{{ device.device_type.manufacturer }},{{ device.device_type.model }},{{ device.site }},{{ device.location.display }},{{ device.platform.slug }}
 {% endfor %}
